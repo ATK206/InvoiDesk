@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Update="AddCustomerWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddProductsServicesWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerListWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditCompanyWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditCustomerWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditProductServiceWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InvoiceManagementWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProductServiceListWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CompanyWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreateInvoiceWindow.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="EditCompanyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditCustomerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditProductServiceWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="InvoiceManagementWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddCustomerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerListWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductServiceListWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CompanyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreateInvoiceWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

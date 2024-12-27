@@ -1,0 +1,21 @@
+﻿<Window x:Class="InvoiceManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rechnungsverwaltung" Height="450" Width="600"
+        Loaded="InitializeWindow">
+    <Grid>
+        <DataGrid x:Name="InvoiceDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding InvoiceId}" Width="*"/>
+                <DataGridTextColumn Header="Rechnungsnummer" Binding="{Binding InvoiceNumber}" Width="*"/>
+                <DataGridTemplateColumn Header="Aktionen" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Download" Command="{Binding DownloadCommand}" CommandParameter="{Binding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

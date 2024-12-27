@@ -1,0 +1,48 @@
+﻿<Window x:Class="CompanyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Unternehmensdaten" Height="360" Width="600">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Name" Margin="0,0,0,5"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="Telefonnummer" Margin="0,0,0,5"/>
+            <TextBox x:Name="PhoneNumberTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="Stadt" Margin="0,0,0,5"/>
+            <TextBox x:Name="CityTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="Land" Margin="0,0,0,5"/>
+            <TextBox x:Name="CountryTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="Steuernummer" Margin="0,0,0,5"/>
+            <TextBox x:Name="TaxNumberTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2">
+            <TextBlock Text="E-Mail" Margin="0,0,0,5"/>
+            <TextBox x:Name="EmailTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="Adresse" Margin="0,0,0,5"/>
+            <TextBox x:Name="AddressTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+            
+            <TextBlock Text="PLZ" Margin="0,0,0,5"/>
+            <TextBox x:Name="PostalCodeTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="IBAN" Margin="0,0,0,5"/>
+            <TextBox x:Name="IbanTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+
+            <TextBlock Text="Geschäftsführer" Margin="0,0,0,5"/>
+            <TextBox x:Name="ManagingDirectorTextBox" Margin="0,0,0,10" IsReadOnly="True"/>
+        </StackPanel>
+
+        <Button Content="Bearbeiten" Click="EditCompany" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="80" Margin="0,0,0,10"/>
+    </Grid>
+</Window>
